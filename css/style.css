@@ -1,0 +1,688 @@
+
+
+  html, body {
+    font-family: 'Josefin Sans', sans-serif;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+
+:root{
+--main-color : #d9a83f85;
+--secondry-color : #fedb81c3 ;
+--buttom-color : #be882c ;
+}
+
+
+.container {
+    padding: 20px 200px;
+    margin-left: auto;
+    margin-right: auto;
+
+  }
+
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--main-color);
+    width: 100%;
+    height: 300px;
+    position: relative;
+  }
+
+  .container .logo img{
+   width: 100px;
+  }
+
+  .product  {
+  
+   height: 400px;
+   position: absolute;
+   left: 33%;
+  }
+
+  .container .header-links a{
+   padding-left: 20px;
+   text-decoration: none;
+   color: white;
+  }
+
+
+  .lading{
+    background-color: var(--secondry-color);
+    height: 330px;
+  }
+
+  .lading .lading-text{
+    text-align: center;
+    padding-top: 150px;
+  }
+
+
+  .lading .lading-text p{
+    color:#777 ; 
+    padding-top: 10px;
+    
+  }
+
+  .lading .lading-text a{
+   display: inline-block;
+   background-color: var(--buttom-color) ;
+   text-decoration: none;
+   color: white;
+   padding: 10px 20px;
+   margin-top: 20px;
+  transition: 0.5s;
+  }
+  .lading .lading-text a:hover{
+    transform: scale(1.1);
+  }
+
+
+
+  .product-section{
+    display: flex;
+    justify-content: space-between ;
+    padding: 20px 200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+  }
+  .product-section img {
+    height: 450px;
+    margin-top: 50px;
+  }
+
+  .product-text h1  {
+    font-size: 25px;
+    font-weight: normal;
+  }
+
+  .product-text h2 {
+   color: var(--buttom-color);
+   font-weight: normal;
+   margin-top: 15px;
+  }
+
+  .product-text p{
+    color: #777;
+    width: 400px;
+    margin-top: 15px;
+  }
+
+.product-cart{
+  background-color: white;
+  border: 1px solid wheat;
+  width: 350px;
+  padding: 30px 20px;
+  margin-top: 20px;
+}
+
+.product-cart p{
+   width: 300px;
+}
+
+.product-cart .text-crt-pr h3{
+ font-weight: normal;
+}
+
+.text-crt-pus{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.text-crt-pus{
+  background-color: white;
+  width: 350px;
+  padding: 15px;
+  margin-top: 10px;
+  border: solid 1px wheat;
+}
+
+.text-crt-pus h1{
+  width: 100%;
+  font-weight: normal;
+}
+
+.text-crt-pus p{
+  font-size: 20px;
+}
+
+
+.text-cart-cart{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  background-color: var(--secondry-color);
+  width: 350px;
+  padding: 15px;
+}
+
+.text-cart-cart h1{
+  font-weight: normal;
+
+}
+
+.text-cart-cart a{
+  text-decoration: none;
+  color: white;
+  background-color: var(--buttom-color);
+  padding: 10px;
+  transition: 0.5s;
+}
+.text-cart-cart a:hover{
+  transform: scale(1.1);
+}
+
+.text-cart-cart input[type="number"]{
+  width: 60px;
+  height: 40px;
+  padding: 5px;
+  margin-right: 50px;
+  
+}
+
+.text-cart-cart input[type="number"]:focus{
+ outline: none;
+ border: 2px solid wheat;
+}
+
+.card{
+
+  background-color: var(--secondry-color);
+  height: 700px;
+  
+}
+
+.card .main-heading-card{
+  text-align: center;
+  margin-top: 150px;
+  position: relative;
+}
+
+.card .main-heading-card img{
+  position: absolute;
+  opacity: 0.30;
+  z-index: -1;
+  right: 400px;
+  top: 250px;
+
+}
+
+.card .main-heading-card h1{
+  font-size: 40px;
+  font-weight: normal;
+  padding-top: 100px;
+  padding-bottom: 20px;
+}
+
+.card .main-heading-card p{
+  display: inline-block;
+  color: #777;
+  line-height: 1.5;
+  width: 500px;
+  
+}
+
+.main-card {
+  padding: 20px 200px;
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+.main-card .text-card{
+  background-color: white;
+  text-align: center;
+  padding: 100px 50px;
+  width: fit-content;
+}
+
+
+.main-card .text-card i{
+  font-size: 60px;
+  color: #777;
+  position: relative;
+  bottom: 50px;
+}
+
+.main-card .text-card p{
+  position: relative;
+  top: 50px;
+  color: #777;
+}
+
+.caption{
+  background-color: white;
+  padding: 100px 50px;
+  width: 194px;
+  position: relative;
+  bottom: 310px;
+  display: none;
+  transition: all 0.5s;
+}
+
+.card-one:hover .caption {
+  display: block;
+ }
+
+ .caption p{
+  width: 100px;
+  
+}
+
+
+
+.quality{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 100px 150px;
+}
+
+.quality .quality-text{
+  background-color: var(--secondry-color);
+  width: 50%;
+  height: 350px;
+  padding: 50px 100px;
+}
+
+
+.quality .quality-text h1{
+  font-weight: normal;
+
+}
+
+.quality .quality-text ul li{
+  padding-top: 20px;
+  color: #777;
+}
+
+
+.gift{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 100px;
+  background-color: var(--secondry-color);
+  height: 400px;
+}
+
+.gift img{
+  height: 500px;
+}
+
+
+.git-text h1{
+  font-weight: normal;
+  font-size: 40px;
+}
+
+.git-text p {
+ color: #777;
+ margin-top: 10px;
+}
+
+.git-text a{
+  display: inline-block;
+  background-color: var(--buttom-color);
+  padding: 10px;
+  text-decoration: none;
+  color: white;
+  margin-top: 20px;
+  transition: 0.5s;
+}
+
+.git-text a:hover{
+  transform: scale(1.1);
+
+}
+
+ footer ul{
+  list-style: none;
+}
+footer{
+  display: flex;
+  justify-content: space-between;
+  padding: 200px;
+}
+
+footer .fot-text-one h1{
+  font-size: 15px;
+  color: #777;
+}
+
+footer .fot-text-one ul li {
+  padding-top: 20px;
+  color: #777;
+  font-size: 13px;
+}
+
+
+.Creater-name{
+  text-align: center;
+  position: relative;
+  bottom: 50px;
+}
+
+
+
+@media (max-width: 900px ){
+  .product  {
+    height: 330px;
+    position: absolute;
+    left: 230px;
+    top: 50px;
+    
+   }
+   .product-section{
+    padding: 20px 15px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+  }
+  .product-section img {
+    height: 330px;
+    margin-top: 30px;
+    margin-left: 50px;
+  }
+
+   
+  .product-text p:nth-child(3){
+    width: 350px;
+  }
+  .main-card {
+    
+    padding: 20px 10px;
+    
+  }
+  .card .main-heading-card img{
+    position: absolute;
+    right: 10px;
+   
+  }
+
+
+  .quality .quality-text ul li{
+    padding-top: 20px;
+    height: 50px;
+  }
+  .quality{
+  
+    padding: 100px 50px;
+    margin-top: 35px;
+  }
+
+  .quality .quality-text{
+    width: 300px;
+    height: 500px;
+    padding: 60px 50px;
+  }
+  .gift img{
+    height: 300px;
+    
+  }
+  .gift h1{
+    font-size: 25px;
+    
+  }
+  .gift{
+    padding: 25px;
+  
+  }
+}
+
+
+@media (max-width: 800px) {
+  .product  {
+    height: 330px;
+    position: absolute;
+    left: 200px;
+    top: 50px;
+    
+   }
+   .product-section img {
+    height: 270px;
+    margin-top: 80px;
+    margin-left: 50px;
+  }
+}
+
+
+
+
+@media (max-width: 760px) {
+  
+  .container {
+    padding: 20px 100px;
+    margin-left: auto;
+    margin-right: auto;
+
+  }
+
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--main-color);
+    width: 100%;
+    height: 300px;
+    position: relative;
+  }
+
+  .container .logo img{
+   width: 100px;
+   position: relative;
+   left: 55px;
+
+  }
+
+  .product  {
+  
+   height: 250px;
+   position: absolute;
+   left: 77px;
+   top: 100px;
+  }
+
+  .container .header-links a{
+    display: none;
+  }
+
+  .lading .lading-text h1{
+    font-size: 28px;
+  }
+
+  .product-section{
+    display: inline-block;
+    justify-content: space-between ;
+    padding: 20px 30px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+  }
+  
+  .product-section img {
+    height: 250px;
+    margin-top: 30px;
+    margin-left: 50px;
+  }
+  .product-text{
+    text-align: center;
+  }
+  .product-text p:nth-child(3){
+    width: 350px;
+  }
+
+  .card .main-heading-card img{
+    position: absolute;
+    opacity: 0.30;
+    z-index: -1;
+    right: 10px;
+    top: 250px;
+    height: 170px;
+  
+  }
+  
+  .card .main-heading-card p{
+    width: 300px;
+    
+  }
+  
+  .main-card {
+    overflow: hidden;
+    padding: 20px 10px;
+    
+  }
+  .main-card .text-card{
+    padding: 100px 60px;
+    
+  }
+
+
+  .quality{
+    display: block;
+    padding: 10px 50px;
+    margin-top: 35px;
+  }
+  .quality img{
+    height: 300px;
+    position: relative;
+    right: 60px;
+    bottom: 100px;
+    overflow: hidden;
+  }
+  
+  .quality .quality-text{
+    background-color: var(--secondry-color);
+    width: 300px;
+    height: 500px;
+    padding: 60px 50px;
+  }
+  
+  
+  .quality .quality-text h1{
+    font-weight: normal;
+    text-align: center;
+  
+  }
+  
+  .quality .quality-text ul li{
+    padding-top: 20px;
+    color: #777;
+    text-align: center;
+  }
+
+  .gift{
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: var(--secondry-color);
+    height: 520px;
+  }
+  
+  .gift img{
+    height: 250px;
+    position: relative;
+    bottom: 15px;
+    left: 55px;
+  }
+  .gift h1{
+   font-size: 30px;
+   text-align: center;
+  }
+  .gift p{
+   text-align: center;
+  }
+  .gift a{
+    display: block;
+   text-align: center;
+  }
+
+  footer{
+     padding: 20px;
+     margin-top: 50px;
+  }
+  footer ul{
+     padding: 15px;
+  }
+  .Creater-name{
+    position: relative;
+    top: 50px;
+    height: 50px;
+  }
+  
+}
+
+
+@media (max-width: 410px){
+  .product-section{
+    padding: 20px 20px;
+  }
+}
+
+
+
+
+@media (max-width: 380px ){
+  
+  .container .logo img{
+    width: 100px;
+    position: relative;
+    left: 35px;
+ 
+   }
+ 
+   .product  {
+   
+    height: 250px;
+    position: absolute;
+    left: 51px;
+    top: 100px;
+   }
+   .lading .lading-text h1{
+    font-size: 25px;
+  }
+
+  .product-text p:nth-child(3){
+    width: 320px;
+  }
+  .product-section{
+    padding: 20px 5px;
+  }
+  .quality .quality-text{
+    background-color: var(--secondry-color);
+    width: 290px;
+    height: 500px;
+    padding: 60px 50px;
+  }
+  .quality img{
+    height: 270px;
+    overflow: hidden;
+  }
+  .gift img{
+    height: 250px;
+    position: relative;
+    bottom: 15px;
+    left: 40px;
+  }
+  
+}
